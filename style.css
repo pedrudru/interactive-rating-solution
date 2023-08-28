@@ -1,0 +1,128 @@
+*{
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+}
+
+main {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(213, 19%, 18%);
+    width: 370px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 150px;
+    border-radius: 20px;
+    font-family: 'Overpass', sans-serif;
+}
+
+#star-icon {
+    padding: 12px;
+    background-color: hsl(218, 10%, 15%);
+    width: fit-content;
+    border-radius: 100%;
+}
+
+
+p {
+    width: 300px;
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: hsl(217, 12%, 63%);
+}
+
+.input-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.input-rating label {
+
+    background-color: hsl(218, 10%, 15%);
+    color: hsl(217, 12%, 63%);
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .input-rating label:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: black;
+  }
+
+  .input-rating input[type="radio"]:checked + label {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  .input-rating input[type="radio"] {
+    display: none;
+  }
+
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid transparent;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.message-box {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#rating-display {
+    background-color: hsl(218, 10%, 15%);
+    color: gold;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+#message-message {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#message-title {
+    margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+
+    main {
+        scale: 0.7;
+    }
+}
